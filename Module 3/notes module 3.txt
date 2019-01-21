@@ -20,7 +20,7 @@ dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design -v 2.1.1
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.1" />
   </ItemGroup>
 
-dotnet aspnet-codegenerator controller -name ParkingController -m Parking -dc ParkingContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries
+dotnet aspnet-codegenerator controller -name ParkingController -m ParkingLot -dc ParkingContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries
 
 dotnet ef migrations add InitialCreate
 dotnet ef database update
