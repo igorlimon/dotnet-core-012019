@@ -1,0 +1,8 @@
+{
+  "AppConfiguration": {
+    "ConnectionString": "Connection string to the database",
+    "Profile": {
+      "UserName": "test1"
+    } 
+  }
+}

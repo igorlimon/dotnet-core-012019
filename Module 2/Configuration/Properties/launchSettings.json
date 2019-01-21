@@ -1,0 +1,16 @@
+{
+  "profiles": {
+    "Configuration": {
+      "commandName": "Project",
+      "commandLineArgs": "key1=configuration",
+      "environmentVariables": {
+        "day": "21",
+        "month": "01",
+        "Environment": "Development",
+        "Env": "staging",
+        "year": "2019",
+        "location": "Coresi Business Park"
+      }
+    }
+  }
+}
