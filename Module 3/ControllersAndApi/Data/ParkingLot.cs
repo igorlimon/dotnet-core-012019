@@ -8,5 +8,8 @@ namespace ControllersAndApi.Data
 
         [Required, StringLength(100)]
         public string Number { get; set; }
+
+        [Required]
+        public double PricePerDay { get; set; }
     }
 }

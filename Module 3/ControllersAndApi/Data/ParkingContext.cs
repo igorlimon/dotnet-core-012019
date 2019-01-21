@@ -10,5 +10,11 @@ namespace ControllersAndApi.Data
         }
 
         public DbSet<ParkingLot> ParkingLots { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.Entity<Booking>()
+                .HasOne(m => m.ParkingLot);
+        }
     }
 }
