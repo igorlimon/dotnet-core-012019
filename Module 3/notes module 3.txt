@@ -1,0 +1,32 @@
+
+function dnb { Write-Host "dotnet build" | dotnet build }
+function dnr { Write-Host "dotnet run" | dotnet run }
+mkdir 'Module 3'
+cd '.\Module 3\'
+
+mkdir ControllersAndApi
+cd ControllersAndApi	
+dotnet new mvc
+
+dotnet add package Microsoft.EntityFrameworkCore.Design -v 2.2.1
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite -v 2.0.0
+dotnet add package Microsoft.EntityFrameworkCore.Tools.DotNet -v 2.0.0
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Tools -v 2.0.0
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design -v 2.1.1
+
+            services.AddDbContext<ParkingContext>(options => options.UseSqlite("Data Source=Parking.db"));
+
+ <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.1" />
+  </ItemGroup>
+
+dotnet aspnet-codegenerator controller -name ParkingController -m Parking -dc ParkingContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries
+
+dotnet ef migrations add InitialCreate
+dotnet ef database update
+
+dotnet aspnet-codegenerator razorpage -m Parking -dc ParkingContext -udl -outDir Pages\ParkingRazorPage --referenceScriptLibraries
+
+mkdir TagHelpers
+cd TagHelpers
+dotnet new web
