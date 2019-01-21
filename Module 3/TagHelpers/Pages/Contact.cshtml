@@ -1,0 +1,31 @@
+﻿@page
+@using global::TagHelpers.Models
+@model ContactModel
+@{
+    ViewData["Title"] = "Contact";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@Model.Message</h3>
+
+<address>
+    One Microsoft Way<br />
+    Redmond, WA 98052-6399<br />
+    <abbr title="Phone">P:</abbr>
+    425.555.0100
+</address>
+
+<address>
+    <strong>Support:</strong>
+    <company-email>Support</company-email><br />
+    <strong>Marketing:</strong>
+    <company-email>Marketing</company-email>
+</address>
+<h1 strike>something</h1>
+
+<CompanyAddress address1=' new Address
+    {
+        Street = "One Microsoft Way",
+        City = "Redmond",
+        PostalCode = "WA 98052-6399",
+        Phone = "425.555.0100"
+    }'/>

@@ -19,6 +19,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ErrorHandling", "..\ErrorHa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControllersAndApi", "..\..\Module 3\ControllersAndApi\ControllersAndApi.csproj", "{D24810F9-83A5-48B4-AB5C-1F395BC65FAE}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TagHelpers", "..\..\Module 3\TagHelpers\TagHelpers.csproj", "{D8F191E5-A233-458F-8320-7C048718E1A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{D24810F9-83A5-48B4-AB5C-1F395BC65FAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D24810F9-83A5-48B4-AB5C-1F395BC65FAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D24810F9-83A5-48B4-AB5C-1F395BC65FAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8F191E5-A233-458F-8320-7C048718E1A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8F191E5-A233-458F-8320-7C048718E1A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8F191E5-A233-458F-8320-7C048718E1A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8F191E5-A233-458F-8320-7C048718E1A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
