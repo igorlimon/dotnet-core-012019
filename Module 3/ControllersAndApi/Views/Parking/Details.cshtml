@@ -17,6 +17,14 @@
             @Html.DisplayFor(model => model.Number)
         </dd>
     </dl>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PricePerDay)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PricePerDay)
+        </dd>
+    </dl>
 </div>
 <div>
     <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
