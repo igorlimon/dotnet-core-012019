@@ -7,3 +7,8 @@ Module 2/Logging/LoggingApp/bin/
 Module 2/Logging/LoggingApp/obj/
 Module 2/DI/bin
 Module 2/DI/obj
+Module 2/Host/GenericHost/bin
+Module 2/Host/GenericHost/obj
+Module 2/Host/WebHost/.vs/
+Module 2/Host/WebHost/obj
+Module 2/Host/WebHost/bin
