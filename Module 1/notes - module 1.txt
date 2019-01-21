@@ -1,0 +1,14 @@
+dotnet --version
+dotnet help
+dotnet new console --name ConsoleApp
+cd .\ConsoleApp\
+dotnet.exe build
+dotnet build -h
+dotnet.exe run
+dotnet new mvc --name MvcApp
+cd .\MvcApp\
+
+dotnet new mvc --name MvcAppWithAuth --auth Individual
+
+
+# try with multiple Startup files and see that it's look for method configuration

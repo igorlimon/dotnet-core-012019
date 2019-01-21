@@ -1,0 +1,59 @@
+
+function dnb { Write-Host "dotnet build" | dotnet build }
+function dnr { Write-Host "dotnet run" | dotnet run }
+
+dotnet new console --name AppMiddleware
+cd .\PeakItMiddleware\
+dotnet add package Microsoft.AspNetCore
+dotnet run
+#app.Use may call next middleware component in the pipeline. 
+#app.Run will never call subsequent middleware.
+
+mkdir Configuration
+cd Configuration
+dotnet new console
+dotnet add package Microsoft.AspNetCore
+dotnet add package Microsoft.Extensions.Configuration
+mkdir ConfigApp
+cd ConfigApp
+dotnet new console
+dotnet add package Microsoft.AspNetCore
+dotnet add package Microsoft.Extensions.Configuration
+
+dotnet add package Microsoft.Extensions.DependencyInjection.Abstractions
+.UseStartup<LifetimeDiStartup>()
+https://github.com/dodyg/practical-aspnetcore/blob/master/projects/middleware-9/src/Program.cs
+https://github.com/dodyg/practical-aspnetcore/blob/master/projects/middleware-8/src/Program.cs
+
+mkdir Logging
+cd Logging
+mkdir LoggingApp
+cd LoggingApp
+dotnet new console
+dotnet add package Microsoft.AspNetCore
+
+mkdir Host
+cd Host
+mkdir GenericHostApp
+cd GenericHostApp
+dotnet new console
+dotnet add package Microsoft.AspNetCore
+dotnet add package Microsoft.Extensions.Hosting
+mkdir WebHostApp
+cd WebHostApp
+dotnet new console
+dotnet add package Microsoft.AspNetCore
+dotnet add package Microsoft.Extensions.Hosting
+# more elaborate example of using hosts https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/multi-container-microservice-net-applications/background-tasks-with-ihostedservice
+mkdir WebHost
+
+mkdir Server
+cd Server
+dotnet new console
+dotnet add package Microsoft.AspNetCore
+dotnet add package Microsoft.AspNetCore.Server.Kestrel
+
+mkdir ErrorHandling
+cd ErrorHandling
+dotnet new console
+dotnet add package Microsoft.AspNetCore
