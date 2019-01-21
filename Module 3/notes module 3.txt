@@ -25,7 +25,7 @@ dotnet aspnet-codegenerator controller -name ParkingController -m ParkingLot -dc
 dotnet ef migrations add InitialCreate
 dotnet ef database update
 
-dotnet aspnet-codegenerator razorpage -m Parking -dc ParkingContext -udl -outDir Pages\ParkingRazorPage --referenceScriptLibraries
+dotnet aspnet-codegenerator razorpage -m ParkingLot -dc ParkingContext -udl -outDir Pages\ParkingRazorPage --referenceScriptLibraries
 
 mkdir TagHelpers
 cd TagHelpers
